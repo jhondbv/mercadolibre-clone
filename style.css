@@ -1,0 +1,110 @@
+.header {
+    position: absolute;
+    height: 100px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    background: #FFF159;
+}
+
+.header>div {
+    position: absolute;
+    width: 1200px;
+    height: 92px;
+    left: calc(50% - 1200px/2);
+    top: 0px;
+}
+
+.header>div>a {
+    position: absolute;
+    width: 134px;
+    height: 34px;
+    left: 10px;
+    top: 11px;
+
+    background: url(./images/logo.svg);
+}
+
+.search-box {
+    position: absolute;
+    width: 600px;
+    height: 56px;
+    left: 195px;
+    top: 0px;
+}
+
+.search-box>input {
+    position: absolute;
+    height: 39px;
+    left: 1px;
+    right: 1px;
+    top: 8px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 2px;
+}
+
+.search-box>input::placeholder {
+    width: 100%;
+    padding-left: 15px;
+    top: 0px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+
+    color: rgba(0, 0, 0, 0.25);
+}
+
+.ul-menu {
+    position: absolute;
+    width: 785px;
+    height: 36px;
+    left: 50px;
+    top: 56px;
+}
+
+.domicilio {
+    position: absolute;
+    height: 32px;
+    left: 10px;
+    right: 1041.55px;
+    top: 63px;
+
+    border-radius: 4px;
+}
+
+.domicilio>span {
+    position: absolute;
+    width: 100%;
+    padding-left: 18px;
+    top: 1px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 22px;
+    /* or 169% */
+
+    display: flex;
+    align-items: center;
+
+    color: #333333;
+}
+
+
+.nav-header {
+    height: 100px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-justify-content: center;
+    justify-content: center;
+    background-color: #fff159;
+    border: 0;
+    position: relative;
+}
