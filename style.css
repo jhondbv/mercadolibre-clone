@@ -14,6 +14,7 @@ body {
     font-weight: 400;
     font-size: 13px;
     line-height: 15px;
+    color: #000000;
 }
 
 /* header  */
@@ -361,18 +362,27 @@ body {
 
 .banner-subscripcion {
     margin-top: 57px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: #FFFFFF;
+    min-width: 903px;
+    overflow: hidden;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 10%);
+    border-radius: 6px;
 }
 
-.banner-subscripcion>div:first-child {
+.banner-subscripcion>.banner-subscipcion-header {
     height: 87px;
     background: linear-gradient(90deg, #A90F90 55%, #0C1A51 100%);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
 }
 
-.banner-subscripcion>div:first-child>span:nth-child(1) {
-    flex-basis: 89%;
+.banner-subscripcion>.banner-subscipcion-header>span:nth-child(1) {
+    flex-basis: calc(100% - 190px);
     font-weight: 600;
     font-size: 25px;
     line-height: 30px;
@@ -382,15 +392,15 @@ body {
     margin-left: 24px;
 }
 
-.banner-subscripcion>div:first-child>div:nth-child(3) {
+.banner-subscripcion>.banner-subscipcion-header>div:nth-child(3) {
     display: flex;
-    flex-basis: 8%;
+    flex-basis: 150px;
     justify-content: flex-start;
     color: #FFFFFF;
     flex-wrap: wrap;
 }
 
-.banner-subscripcion>div:first-child>div:nth-child(3)>span:nth-child(1) {
+.banner-subscripcion>.banner-subscipcion-header>div:nth-child(3)>span:nth-child(1) {
     flex-basis: 100%;
     display: flex;
     justify-content: flex-start;
@@ -399,23 +409,23 @@ body {
     top: 8px;
 }
 
-.banner-subscripcion>div:first-child>div:nth-child(3)>span:nth-child(2) {
+.banner-subscripcion>.banner-subscipcion-header>div:nth-child(3)>span:nth-child(2) {
     font-weight: 600;
     font-size: 22px;
     line-height: 24px;
     display: flex;
     align-items: flex-start;
-    flex-basis: 70%;
+    flex-basis: 55%;
     justify-content: flex-start;
 }
 
-.banner-subscripcion>div:first-child>div:nth-child(3)>span:nth-child(3) {
+.banner-subscripcion>.banner-subscipcion-header>div:nth-child(3)>span:nth-child(3) {
     display: flex;
     top: 6px;
     position: relative;
 }
 
-.banner-subscripcion>div:first-child>div:nth-child(2) {
+.banner-subscripcion>.banner-subscipcion-header>div:nth-child(2) {
     display: flex;
     width: 10px;
     align-items: center;
@@ -428,6 +438,68 @@ body {
     position: relative;
 }
 
+.banner-subscripcion>.banner-subscipcion-middle {
+    height: 172px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.banner-subscripcion>.banner-subscipcion-middle>span {
+    display: flex;
+    width: 97%;
+    align-items: flex-start;
+    left: 24px;
+    position: relative;
+    top: 20px;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.banner-subscripcion>.banner-subscipcion-middle>.banner-subscripcion-item {
+    display: flex;
+    width: 33%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 74px;
+    gap: 15px;
+}
+
+.banner-subscripcion>.banner-subscipcion-middle>.banner-subscripcion-item>img {
+    display: flex;
+    margin-left: 24px;
+}
+
+.banner-subscripcion>.banner-subscipcion-middle>.banner-subscripcion-item>span {
+    position: relative;
+    display: flex;
+    width: 37%;
+    align-items: center;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.banner-subscipcion-footer{
+    height: 81px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    right: 30px;
+    position: relative;
+}
+.btn-primario{
+    width: 123.72px;
+    height: 48px;
+    background: #3483FA;
+    border-radius: 6px;
+    color: #FFFFFF;
+    border: none;
+}
+.btn-primario:hover{
+    cursor: pointer;
+    background: #257bfc;
+}
 /*BANNER OFERTA*/
 
 
