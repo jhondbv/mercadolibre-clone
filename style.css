@@ -8,6 +8,15 @@
     min-width: 944px;
 }
 
+body {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+}
+
 /* header  */
 .header {
     background: #FFF159;
@@ -19,7 +28,7 @@
 .grid-container {
     display: flex;
     flex-wrap: wrap;
-    margin-left: 156px;
+    margin-left: 200px;
     margin-right: 74px;
     column-gap: 24px;
     padding: 8px 10px 12px 10px;
@@ -172,28 +181,32 @@
 
 /*NOVEDADES*/
 
-/*BODY*/
+/*BANNER-SUP*/
 .body {
-   min-width: inherit;
+    min-width: inherit;
     display: flex;
     flex-basis: 100%;
     background-color: #EBEBEB;
-    
+    flex-direction: column;
+}
+
+.main-content {
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 40px;
+    display: flex;
+    min-width: 500px;
 }
 
 .banner-sup {
-    width: 100%;
-    min-width: 500px;
     height: 90px;
     background: #FFFFFF;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
-    display: flex;
-    margin-left: 164px;
-    margin-right: 164px;
-    margin-top: 40px;
+    min-width: 903px;
 }
-.banner-sup div{
+
+.banner-sup div {
     height: 100%;
     justify-content: center;
     display: flex;
@@ -203,16 +216,15 @@
     flex-direction: column;
     flex-basis: 25%;
 }
-.banner-sup div>img{
+
+.banner-sup div>img {
     display: flex;
     order: 1;
     flex: 0 0 100%;
     width: 50px;
 }
-.banner-sup div>span{
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
+
+.banner-sup div>span {
     font-size: 17px;
     line-height: 20px;
     display: flex;
@@ -221,28 +233,296 @@
     flex: 0 0 28%;
     width: 72%;
 }
-.banner-sup div>a{
+
+.banner-sup div>a {
     display: flex;
     position: relative;
     order: 3;
     text-decoration: none;
+    color: #3483FA;
 }
 
 .line {
     border-left: 1px solid #ccc;
     height: 100%;
-  }
-/*BODY*/
+}
+
+/*BANNER-SUP*/
+
+/*BANNER OFERTA*/
+.banner-oferta {
+    margin-top: 50px;
+    flex-direction: column;
+}
+
+.banner-titulo {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 22px;
+}
+
+.banner-titulo>span {
+    font-size: 25px;
+    line-height: 31px;
+    color: #666666;
+}
+
+.banner-titulo>a {
+    display: flex;
+    position: relative;
+    text-decoration: none;
+    font-size: 15px;
+    line-height: 19px;
+    color: #3483FA;
+    align-items: flex-end;
+}
+
+.banner-content {
+    display: flex;
+    gap: 1%;
+}
+
+.card {
+    width: 20%;
+    height: 350px;
+    top: 0px;
+    margin-bottom: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.card>div:first-child {
+    width: 100%;
+    min-height: 45%;
+    height: 60%;
+    border-bottom: solid 1px #dad8d8;
+    justify-content: center;
+    display: flex;
+    /* flex-basis: 14%; */
+}
+
+.card>div:nth-child(2) {
+    height: 88px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.card>div:nth-child(2)>span:nth-child(1) {
+    font-size: 23px;
+    line-height: 24px;
+    display: flex;
+    flex-basis: 40%;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 16px;
+}
+
+.card>div:nth-child(2)>span:nth-child(2) {
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #00A650;
+    flex-basis: 32%;
+    margin-left: 5px;
+}
+
+.card>div:nth-child(2)>span:nth-child(3) {
+    font-weight: 600;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: flex-start;
+    color: #00A650;
+    justify-content: flex-start;
+    flex-basis: 100%;
+    margin-left: 16px;
+}
+
+.card>div:nth-child(2)>span:nth-child(3)>svg {
+    top: 2px;
+    position: relative;
+    left: 4px;
+}
+
+.card>img {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn-primario {}
+
+.banner-subscripcion {
+    margin-top: 57px;
+    margin-bottom: 10px;
+    width: 100%;
+    background: #FFFFFF;
+    min-width: 903px;
+    overflow: hidden;
+    box-shadow: 0px 1px 1px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+}
+
+.banner-subscripcion>.banner-subscipcion-header {
+    height: 87px;
+    background: linear-gradient(90deg, #A90F90 55%, #0C1A51 100%);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-subscripcion>.banner-subscipcion-header>span:nth-child(1) {
+    flex-basis: calc(100% - 190px);
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+    margin-left: 24px;
+}
+
+.banner-subscripcion>.banner-subscipcion-header>div:nth-child(3) {
+    display: flex;
+    flex-basis: 150px;
+    justify-content: flex-start;
+    color: #FFFFFF;
+    flex-wrap: wrap;
+}
+
+.banner-subscripcion>.banner-subscipcion-header>div:nth-child(3)>span:nth-child(1) {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    top: 8px;
+}
+
+.banner-subscripcion>.banner-subscipcion-header>div:nth-child(3)>span:nth-child(2) {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    display: flex;
+    align-items: flex-start;
+    flex-basis: 55%;
+    justify-content: flex-start;
+}
+
+.banner-subscripcion>.banner-subscipcion-header>div:nth-child(3)>span:nth-child(3) {
+    display: flex;
+    top: 6px;
+    position: relative;
+}
+
+.banner-subscripcion>.banner-subscipcion-header>div:nth-child(2) {
+    display: flex;
+    width: 10px;
+    align-items: center;
+}
+
+.subscripcion-line {
+    border-left: 3px solid #FFFFFF;
+    height: 48%;
+    display: flex;
+    position: relative;
+}
+
+.banner-subscripcion>.banner-subscipcion-middle {
+    height: 172px;
+    display: flex;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #EDEDED;
+}
+
+.banner-subscripcion>.banner-subscipcion-middle>span {
+    display: flex;
+    width: 97%;
+    align-items: flex-start;
+    left: 24px;
+    position: relative;
+    top: 20px;
+    font-size: 17px;
+    line-height: 18px;
+}
+
+.banner-subscripcion>.banner-subscipcion-middle>.banner-subscripcion-item {
+    display: flex;
+    width: 33%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 74px;
+    gap: 15px;
+}
+
+.banner-subscripcion>.banner-subscipcion-middle>.banner-subscripcion-item>img {
+    display: flex;
+    margin-left: 24px;
+}
+
+.banner-subscripcion>.banner-subscipcion-middle>.banner-subscripcion-item>span {
+    position: relative;
+    display: flex;
+    width: 37%;
+    align-items: center;
+    font-size: 15px;
+    line-height: 16px;
+}
+
+.banner-subscipcion-footer{
+    height: 81px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    right: 30px;
+    position: relative;
+}
+.btn-primario{
+    width: 123.72px;
+    height: 48px;
+    background: #3483FA;
+    border-radius: 6px;
+    color: #FFFFFF;
+    border: none;
+}
+.btn-primario:hover{
+    cursor: pointer;
+    background: #257bfc;
+}
+/*BANNER OFERTA*/
+
+
+@media screen and (max-width: 1500px) {
+    .card>div:first-child {
+        height: 50%;
+    }
+
+}
+
+@media screen and (max-width: 1282px) {
+    .main-content {
+        margin-left: calc(3% + 1px);
+        margin-right: calc(5% + 1px);
+    }
+}
 
 @media screen and (max-width: 1213px) {
     .grid-container {
         margin-left: 0 !important;
         margin-right: 0 !important;
     }
-    .banner-sup{
-        margin-left: calc(5% + 1px);
-        margin-right: calc(5% + 1px);
-    }
+
 }
 
 @media screen and (max-width: 979px) {
