@@ -479,7 +479,7 @@ body {
     line-height: 16px;
 }
 
-.banner-subscipcion-footer{
+.banner-subscipcion-footer {
     height: 81px;
     display: flex;
     flex-wrap: wrap;
@@ -488,7 +488,8 @@ body {
     right: 30px;
     position: relative;
 }
-.btn-primario{
+
+.btn-primario {
     width: 123.72px;
     height: 48px;
     background: #3483FA;
@@ -496,12 +497,65 @@ body {
     color: #FFFFFF;
     border: none;
 }
-.btn-primario:hover{
+
+.btn-primario:hover {
     cursor: pointer;
     background: #257bfc;
 }
+
 /*BANNER OFERTA*/
 
+/*BANNER BENEFICIOS*/
+.banner-beneficios {
+    margin-top: 50px;
+    display: grid;
+    min-width: 903px;
+}
+
+.banner-beneficios-content {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: auto auto auto;
+}
+
+.beneficio-card {
+    min-width: 100px;
+    min-height: 100px;
+    top: 0px;
+    max-width: 384px;
+    max-height: 250px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.beneficio-card>img {
+    width: 100%;
+}
+
+.beneficio-card>div {
+    position: absolute;
+    height: 124px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+   
+}
+.gradient-blue{
+    background: linear-gradient(0deg, #0064FF 0%, rgba(0, 100, 255, 0) 100%);
+}
+.gradient-purple{
+    background: linear-gradient(0deg, #3C034E 0%, rgba(60, 3, 78, 0) 100%);
+}
+.gradient-black{
+    background: linear-gradient(0deg, #081330 0%, rgba(8, 19, 48, 0) 100%);
+}
+
+/*BANNER BENEFICIOS*/
 
 @media screen and (max-width: 1500px) {
     .card>div:first-child {
