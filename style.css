@@ -22,7 +22,8 @@ body {
     background: #FFF159;
     display: flex;
     flex-basis: 100%;
-
+    justify-content: center;
+    width: 100;
 }
 
 .grid-container {
@@ -188,11 +189,12 @@ body {
     flex-basis: 100%;
     background-color: #EBEBEB;
     flex-direction: column;
+    /* text-align: center; */
+    justify-content: center;
+    align-items: center;
 }
 
 .main-content {
-    margin-left: 200px;
-    margin-right: 200px;
     margin-top: 40px;
     display: flex;
     min-width: 500px;
@@ -204,6 +206,8 @@ body {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
     border-radius: 4px;
     min-width: 903px;
+    max-width: 1184px;
+    width: 95%;
 }
 
 .banner-sup div {
@@ -253,6 +257,8 @@ body {
 .banner-oferta {
     margin-top: 50px;
     flex-direction: column;
+    min-width: 903px;
+    max-width: 1184px;
 }
 
 .banner-titulo {
@@ -510,12 +516,14 @@ body {
     margin-top: 50px;
     display: grid;
     min-width: 903px;
+    max-width: 1184px;
 }
 
 .banner-beneficios-content {
     display: grid;
     gap: 16px;
     grid-template-columns: auto auto auto;
+    justify-content: space-between;
 }
 
 .beneficio-card {
@@ -528,13 +536,19 @@ body {
     border-radius: 6px;
     display: flex;
     position: relative;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
-    flex-wrap: wrap;
+    overflow: hidden;
+    cursor: pointer;
 }
 
-.beneficio-card>img {
+.beneficio-card> .background {
     width: 100%;
+}
+.beneficio-card> .icon {
+    position: absolute;
+    left: 15px;
+    bottom: 16px;
 }
 
 .beneficio-card>div {
@@ -544,6 +558,37 @@ body {
     right: 0px;
     bottom: 0px;
    
+}
+.beneficio-card span:nth-of-type(1) {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 24px;
+    align-items: center;
+    color: #FFFFFF;
+    position: absolute;
+    left: 112px;
+    bottom: 57px;
+}
+.beneficio-card span:nth-of-type(2){
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.4px;
+    color: #FFFFFF;
+    position: absolute;
+    left: 112px;
+    bottom: 32px;
+}
+.beneficio-card span:nth-of-type(3){
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 16px;
+    align-items: center;
+    color: #FFFFFF;
+    position: absolute;
+    left: 112px;
+    bottom: 75px;
 }
 .gradient-blue{
     background: linear-gradient(0deg, #0064FF 0%, rgba(0, 100, 255, 0) 100%);
