@@ -254,11 +254,16 @@ body {
 /*BANNER-SUP*/
 
 /*BANNER OFERTA*/
-.banner-oferta {
+.banner-base {
     margin-top: 50px;
-    flex-direction: column;
+
     min-width: 903px;
     max-width: 1184px;
+}
+
+.banner-oferta {
+
+    flex-direction: column;
 }
 
 .banner-titulo {
@@ -363,8 +368,6 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
-
-.btn-primario {}
 
 .banner-subscripcion {
     margin-top: 57px;
@@ -513,10 +516,7 @@ body {
 
 /*BANNER BENEFICIOS*/
 .banner-beneficios {
-    margin-top: 50px;
     display: grid;
-    min-width: 903px;
-    max-width: 1184px;
 }
 
 .banner-beneficios-content {
@@ -542,10 +542,11 @@ body {
     cursor: pointer;
 }
 
-.beneficio-card> .background {
+.beneficio-card>.background {
     width: 100%;
 }
-.beneficio-card> .icon {
+
+.beneficio-card>.icon {
     position: absolute;
     left: 15px;
     bottom: 16px;
@@ -557,8 +558,9 @@ body {
     left: 0px;
     right: 0px;
     bottom: 0px;
-   
+
 }
+
 .beneficio-card span:nth-of-type(1) {
     font-weight: 600;
     font-size: 22px;
@@ -569,7 +571,8 @@ body {
     left: 112px;
     bottom: 57px;
 }
-.beneficio-card span:nth-of-type(2){
+
+.beneficio-card span:nth-of-type(2) {
     font-weight: 600;
     font-size: 17px;
     line-height: 20px;
@@ -580,7 +583,8 @@ body {
     left: 112px;
     bottom: 32px;
 }
-.beneficio-card span:nth-of-type(3){
+
+.beneficio-card span:nth-of-type(3) {
     font-weight: 600;
     font-size: 11px;
     line-height: 16px;
@@ -590,17 +594,86 @@ body {
     left: 112px;
     bottom: 75px;
 }
-.gradient-blue{
+
+.gradient-blue {
     background: linear-gradient(0deg, #0064FF 0%, rgba(0, 100, 255, 0) 100%);
 }
-.gradient-purple{
+
+.gradient-purple {
     background: linear-gradient(0deg, #3C034E 0%, rgba(60, 3, 78, 0) 100%);
 }
-.gradient-black{
+
+.gradient-black {
     background: linear-gradient(0deg, #081330 0%, rgba(8, 19, 48, 0) 100%);
 }
 
 /*BANNER BENEFICIOS*/
+
+
+/*BANNER DESCUBRE*/
+.banner-descubre {
+    display: grid;
+    margin-bottom: 100px;
+}
+
+.banner-descubre-content {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: auto auto;
+    justify-content: space-between;
+}
+
+.descubre-card {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    min-width: 100px;
+    min-height: 100px;
+    top: 0px;
+    max-width: 584px;
+    max-height: 250px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.descubre-card span:nth-of-type(1) {
+    position: relative;
+    left: 32px;
+    top: 58px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 12px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    color: #4B4B4B;
+}
+
+.descubre-card span:nth-of-type(2) {
+    position: relative;
+    left: 32px;
+    top: 81px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 31px;
+    text-transform: uppercase;
+    color: #4B4B4B;
+    display: block;
+}
+.descubre-card button {
+position: relative;
+width: 96px;
+height: 36px;
+left: 32px;
+top: 89.59px;
+background: #3483FA;
+border-radius: 2px;
+color: #FFFFFF;
+border: none;
+cursor:pointer
+}
+
+/*BANNER DESCUBRE*/
+
 
 @media screen and (max-width: 1500px) {
     .card>div:first-child {
@@ -614,12 +687,26 @@ body {
         margin-left: calc(3% + 1px);
         margin-right: calc(5% + 1px);
     }
+
+    .descubre-card span:nth-of-type(2) {
+        font-size: calc(28px - 3px);
+    }
+    .descubre-card span:nth-of-type(1) {
+        font-size: calc(12px - 1px);
+    }
 }
 
 @media screen and (max-width: 1213px) {
     .grid-container {
         margin-left: 0 !important;
         margin-right: 0 !important;
+    }
+
+    .descubre-card span:nth-of-type(2) {
+        font-size: calc(28px - 10px);
+    }
+    .descubre-card span:nth-of-type(1) {
+        font-size: calc(12px - 3px);
     }
 
 }
@@ -640,6 +727,13 @@ body {
     .row-1 {
         text-align: center;
 
+    }
+
+    .descubre-card span:nth-of-type(2) {
+        font-size: calc(28px -8px);
+    }
+    .descubre-card span:nth-of-type(1) {
+        font-size: calc(12px - 3px);
     }
 
 }
