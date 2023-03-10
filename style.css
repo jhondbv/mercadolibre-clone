@@ -253,7 +253,7 @@ body {
 
 /*BANNER-SUP*/
 
-/*BANNER OFERTA*/
+/*SECCION OFERTA*/
 .banner-base {
     margin-top: 50px;
 
@@ -512,9 +512,9 @@ body {
     background: #257bfc;
 }
 
-/*BANNER OFERTA*/
+/*SECCION OFERTA*/
 
-/*BANNER BENEFICIOS*/
+/*SECCION BENEFICIOS*/
 .banner-beneficios {
     display: grid;
 }
@@ -607,13 +607,12 @@ body {
     background: linear-gradient(0deg, #081330 0%, rgba(8, 19, 48, 0) 100%);
 }
 
-/*BANNER BENEFICIOS*/
+/*SECCION BENEFICIOS*/
 
 
-/*BANNER DESCUBRE*/
+/*SECCION DESCUBRE*/
 .banner-descubre {
     display: grid;
-    margin-bottom: 100px;
 }
 
 .banner-descubre-content {
@@ -629,7 +628,6 @@ body {
     border-radius: 4px;
     min-width: 100px;
     min-height: 100px;
-    top: 0px;
     max-width: 584px;
     max-height: 250px;
     display: grid;
@@ -659,22 +657,114 @@ body {
     color: #4B4B4B;
     display: block;
 }
+
 .descubre-card button {
-position: relative;
-width: 96px;
-height: 36px;
-left: 32px;
-top: 89.59px;
-background: #3483FA;
-border-radius: 2px;
-color: #FFFFFF;
-border: none;
-cursor:pointer
+    position: relative;
+    width: 96px;
+    height: 36px;
+    left: 32px;
+    top: 89.59px;
+    background: #3483FA;
+    border-radius: 2px;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer
 }
 
-/*BANNER DESCUBRE*/
+/*SECCION DESCUBRE*/
+
+/*SECCION MEJORES TIENDAS*/
+.banner-mejores-tiendas {
+    display: grid;
+    margin-bottom: 100px;
+}
+
+.banner-mejores-tiendas-content {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-between;
+}
+
+.mejores-tiendas-card {
+
+    max-width: 284px;
+    max-height: 340px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px -1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.mejores-tiendas-card img:nth-of-type(1) {
+    height: 95px;
+    position: relative;
+    width: 100%;
+    grid-column: 1/4;
+    grid-row: 1;
+}
+
+.mejores-tiendas-card img:nth-of-type(2) {
+    box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    position: relative;
+    top: 56px;
+    height: 80px;
+    grid-column: 2/3;
+    grid-row: 1/1;
+    justify-self: center;
+}
+
+.mejores-tiendas-card span:nth-of-type(1) {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28px;
+    color: #333333;
+    justify-content: center;
+    display: grid;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.mejores-tiendas-card span:nth-of-type(2) {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    color: #999999;
+    grid-column: 2;
+    grid-row: 5;
+    cursor: pointer;
+}
+
+.mejores-tiendas-card img:nth-of-type(3) {
+    grid-column: 1;
+    grid-row: 4;
+    justify-self: right;
+}
+
+.mejores-tiendas-card img:nth-of-type(4) {
+    grid-column: 3;
+    grid-row: 4;
+}
+
+.mejores-tiendas-card img:nth-of-type(5) {
+    grid-row: 4;
+    grid-column: 2;
+    justify-self: center;
+}
 
 
+.mejores-tiendas-card>.border-img {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1), 0px -1px 2px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+/*SECCION MEJORES TIENDAS*/
 @media screen and (max-width: 1500px) {
     .card>div:first-child {
         height: 50%;
@@ -691,6 +781,7 @@ cursor:pointer
     .descubre-card span:nth-of-type(2) {
         font-size: calc(28px - 3px);
     }
+
     .descubre-card span:nth-of-type(1) {
         font-size: calc(12px - 1px);
     }
@@ -705,6 +796,7 @@ cursor:pointer
     .descubre-card span:nth-of-type(2) {
         font-size: calc(28px - 10px);
     }
+
     .descubre-card span:nth-of-type(1) {
         font-size: calc(12px - 3px);
     }
@@ -732,6 +824,7 @@ cursor:pointer
     .descubre-card span:nth-of-type(2) {
         font-size: calc(28px -8px);
     }
+
     .descubre-card span:nth-of-type(1) {
         font-size: calc(12px - 3px);
     }
