@@ -840,6 +840,49 @@ body {
 
 /*SECCION COLECCIONES*/
 
+/*SECCION CATEGORIAS POPULARES*/
+.banner-categorias-populares {
+    display: grid;
+    margin-bottom: 21px;
+}
+
+.categorias-populares-content {
+    display: grid;
+    gap: 0px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: space-between;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #EAE6E6;
+    text-align: center;
+
+}
+
+.categorias-populares-content>div {
+    border-width: 1px;
+    border-style: solid;
+    border-color: #EAE6E6;
+    height: 170px;
+    background-color: #FFFFFF;
+}
+
+.categorias-populares-content>div>span {
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    color: #333333;
+}
+
+.categorias-populares-content>div>img {
+    margin-top: 50px;
+}
+
+
+/*SECCION CATEGORIAS POPULARES*/
 @media screen and (max-width: 1500px) {
     .card>div:first-child {
         height: 50%;
