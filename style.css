@@ -883,6 +883,123 @@ body {
 
 
 /*SECCION CATEGORIAS POPULARES*/
+
+
+/*SECCION FOOTER*/
+.footer {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    background-color: #FFFFFF;
+    min-width: inherit;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+    border-bottom: 1px solid #E6E6E6; ;
+}
+.footer2{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    color: #000000;
+    background-color: #FFFFFF;
+    min-width: inherit;
+    display: flex;
+    flex-basis: 100%;
+    justify-content: center;
+}
+
+.banner-footer {
+    display: grid;
+    margin-bottom: 21px;
+    background-color: #FFFFFF;
+}
+
+.banner-footer-content {
+    grid-template-columns:auto 1px auto 1px auto;
+    display: grid;
+    text-align: center;
+}
+
+.banner-footer-content>div {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3, 1fr);
+    padding: 45px;
+}
+
+.banner-footer-content>div>img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner-footer-content>div>span:nth-of-type(1) {
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 28px;
+    align-items: center;
+    display: grid;
+}
+
+.banner-footer-content>div>span:nth-of-type(2) {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #999999;
+}
+
+.banner-footer-content>div>span:nth-of-type(3) {
+    font-size: 13px;
+    line-height: 15px;
+    color: #3483FA;
+    margin-top: 9px;
+}
+
+.vertical-line {
+    width: 0.5px;
+    height: 65px;
+    background: #E2E2E2;
+    margin-top: 130px;
+    padding: 0px !important;
+}
+
+.last-footer{
+    display: flex; 
+    width: 100%;
+    flex-direction: column;
+ }
+ .last-footer>div:nth-of-type(1){
+    margin-bottom: 7px;
+ }
+ .last-footer>div:nth-of-type(2){
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    color: #999999;
+    padding-bottom: 14px;
+    margin-bottom: 17px;
+    border-bottom:  1px solid #EDEDED;
+    gap: 5px;
+ }
+ .last-footer>div:nth-of-type(2)>span{
+
+ }
+
+ .last-footer>div:nth-of-type(3){
+    margin-bottom: 100px;
+    display: flex;
+    gap: 20px;
+ }
+
+/*SECCION FOOTER*/
+
 @media screen and (max-width: 1500px) {
     .card>div:first-child {
         height: 50%;
@@ -906,8 +1023,9 @@ body {
 
     .banner-colecciones-content {
         grid-template-columns: repeat(4, 1fr);
-        /* grid-template-rows: repeat(4, 1fr); */
     }
+
+
 }
 
 @media screen and (max-width: 1213px) {
